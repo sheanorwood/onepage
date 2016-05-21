@@ -4,6 +4,8 @@ Onepage::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#index'
+  resources  :shows, only:  :create
+  get 'shows', to: 'pages#shows'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
