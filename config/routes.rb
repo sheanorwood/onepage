@@ -6,6 +6,7 @@ Onepage::Application.routes.draw do
   root 'pages#index'
   resources  :shows, only:  :create
   get 'shows', to: 'pages#shows'
+  get 'new', to: 'pages#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
