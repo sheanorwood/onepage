@@ -1,9 +1,17 @@
+
 <div class="box col-xs-10 col-xs-offset-1">
   <h1>Enter your Information</h1>
-<%= simple_form_for @forms do | f | %>
-    <%= f.input  :name %>
-    <%= f.input  :email %>
-    <%= f.input  :message %>
+
+
+<%= simple_form_for @form, url: form_index_path(@form) do | f | %>
+<div class="clear"></div>
+    <%= f.input  :name, placeholder: 'Enter your First and Last Name' %>
+    <%= f.input  :email, placeholder: 'user@domain.com' %>
+    <%= f.input  :message, label: 'Enter a message' %> <br />
+
+<%=  f.submit  'Submit' , class: 'btn btn-primary' %>
+
 <% end %>
+
 
 </div>

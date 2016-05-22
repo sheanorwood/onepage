@@ -1,14 +1,17 @@
 class ShowsController < ApplicationController
 
-def create
-        @forms =  Form.create(params[ :id ] )
-         redirect_to shows_path(@forms)
-    end
 
-private
+# def new
+   #    @forms = Form.new
+   # end
 
-def form_params
-    params.require( :name, :email).permit( :message)
-  end
+#private
+
+#def form_params
+  #  params.require( :name, :email).permit( :message)
+  #end
 
 end
+
+#   @forms =  Form.create(params[ :id ] )
+#    redirect_to shows_path(@forms)
