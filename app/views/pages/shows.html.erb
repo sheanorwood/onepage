@@ -1,13 +1,11 @@
 <h1>Test Page</h1>
 
 <% @forms.each do | form | %>
-<div>
+<div class="box col-xs-10 col-xs-offset-1">
    <h2><%= form.name %></h2> <br />
-    <i><%= form.email %></i><br />
+    <i><%= form.email %></i><br /><br />
     <p><%= form.message %></p><br />
 </div>
-
-<hr />
 
 <% end %>
 
