@@ -4,7 +4,7 @@ Onepage::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#index'
-  resources  :form, only:  :create
+  resources  :forms, only:  :create
   get 'shows', to: 'pages#shows'
   get 'new', to: 'pages#new'
 
